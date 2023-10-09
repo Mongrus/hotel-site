@@ -1,0 +1,44 @@
+$color-blue: #00559C
+$color-yellow: #D4C961
+$color-violet: #735897
+$color-gray: #F5F5F5
+    
+*, ::after, ::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-family: InterR
+    span
+        font-family: InterB
+    font-size: 62.5% !important
+    @include respond (tab-port)
+        font-size: 56.25% !important
+    @include respond (tab-land)
+        font-size: 40% !important
+    @include respond (phone)
+        font-size: 30% !important
+    @include respond (mini-phone)
+        font-size: 20% !important
+    @include respond (big-screen) 
+        font-size: 75% !important
+
+button 
+     background: none
+     border: none
+     padding: 0
+
+
+.main-container
+    display: grid
+    grid-template-rows: 70rem 50rem 65rem 90rem 55rem 25rem
+    grid-template-columns: 1fr
+    @include respond (mini-phone)
+        grid-template-rows: 175rem 120rem 80rem 260rem 140rem 45rem
+        grid-template-columns: 1fr
+
+.content-container
+    max-width: 117rem
+    margin-left: auto
+    margin-right: auto

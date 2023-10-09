@@ -1,0 +1,34 @@
+.footer
+    grid-column: 1 / -1
+    grid-row: 6 / 7
+    background-color: $color-gray
+    text-align: center
+    font-family: OswaldR
+    &__info
+        display: flex
+        justify-content: space-evenly
+    &__text-block
+        width: 30rem
+        p
+            font-size: 2rem
+            padding-top: 1.7rem
+        h2
+            font-size: 2.5rem
+            padding-top: 4.5rem
+        @include respond (mini-phone)
+            h2
+                font-size: 4rem
+            p
+                font-size: 3.5rem
+    &__title
+        background-color: $color-violet
+        width: 27rem
+        height: 6.5rem
+        color: white
+        font-family: MegrimR
+        font-size: 6rem
+        margin: 0 auto
+        @include respond (mini-phone)
+            height: 10rem
+            width: 40rem
+            font-size: 10rem
